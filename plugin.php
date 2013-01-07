@@ -62,7 +62,7 @@ class BE_Gallery_Rotator {
 	}
 	
 	/**
-	 * Hover Gallery
+	 * Rotator Gallery Shortcode
 	 *
 	 * @param string $output
 	 * @param array $atts
