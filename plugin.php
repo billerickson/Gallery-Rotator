@@ -122,7 +122,7 @@ class BE_Gallery_Rotator {
 		foreach( $attachments as $id => $attachment ) {
 		
 			$image = wp_get_attachment_image_src( $id, 'large' );
-			$output .= '<li><img src="' . $image[0] . '" alt="' . get_the_title() . '" /></li>';
+			$output .= apply_filters( 'be_gallery_rotator_slide_output', '<li><img src="' . $image[0] . '" alt="' . get_the_title() . '" /></li>', $id, $attachment );
 		}
 		$output .= '</ul></div><!-- .gallery-rotator -->';
 		return $output;
